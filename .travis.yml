@@ -1,0 +1,9 @@
+language: javascript
+script: ./node_modules/.bin/mermaid -o site hacks.mmd
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_folder: site
+  on:
+    branch: master
