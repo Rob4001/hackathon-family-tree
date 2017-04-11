@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "node"
-script: ./node_modules/.bin/mermaid -o site hacks.mmd
+script: npm start
 deploy:
   provider: pages
   skip_cleanup: true
